@@ -1,0 +1,37 @@
+{
+  "ts-node": {
+    // resolve paths
+    // see https://typestrong.org/ts-node/docs/paths/#why-is-this-not-built-in-to-ts-node
+    "require": ["tsconfig-paths/register"],
+    // compile *.d.ts
+    // see https://stackoverflow.com/questions/51610583/ts-node-ignores-d-ts-files-while-tsc-successfully-compiles-the-project
+    "files": true
+  },
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "commonjs",
+    "target": "es6",
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/*"]
+    },
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": ["es2015", "es2017"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "incremental": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["src"]
+}

@@ -4,7 +4,6 @@ import fs from "fs";
 import path from "path";
 
 // toolchain
-import COS from "@laffery/cos-db";
 import { cosConfig } from "config/cos.config";
 import { PrismaClient } from "@prisma/client";
 
@@ -20,13 +19,14 @@ import dynamicController from "controller/dynamic";
 
 const app = new Koa();
 const { port } = config;
+const COSClient = require("@laffery/cos-db");
 app.use(async (ctx, next) => {
   // set private secret key
   ctx.state.secret = fs.readFileSync(
     path.resolve(__dirname, "./auth/rsa_prv.pem")
   );
   // init COS client
-  ctx.state.cos = COS(cosConfig);
+  ctx.state.cos = new COSClient(cosConfig);
   // init prisma database client
   ctx.state.db = new PrismaClient();
   await next();

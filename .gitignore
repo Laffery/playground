@@ -1,2 +1,11 @@
+.vscode/
+*.log
+node_modules/
+
+# build
+target/
+build/
+dist/
+
 # misc
 .DS_Store

@@ -1,0 +1,19 @@
+{
+  "name": "ts-challenge",
+  "version": "1.0.0",
+  "description": "type challenges",
+  "main": "index.ts",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "keywords": [
+    "typescript",
+    "challenge"
+  ],
+  "author": "laffery",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.6.3"
+  }
+}

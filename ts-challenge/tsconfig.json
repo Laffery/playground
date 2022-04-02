@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2017",
+    "lib": ["ESNext"],
+    "baseUrl": ".",
+    "paths": {
+      "utils": ["./utils/index.d.ts"]
+    },
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "typeRoots": ["utils/index.d.ts"],
+    "allowJs": true
+  },
+  "exclude": ["node_modules", "dist"]
+}

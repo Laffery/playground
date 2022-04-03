@@ -25,12 +25,12 @@
     methods "^1.1.2"
     path-to-regexp "^6.1.0"
 
-"@laffery/cos-db@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@laffery/cos-db/-/cos-db-1.1.0.tgz#1dd13cb14f4a5fd15566a1c3036d993f2bc8f884"
-  integrity sha512-1v8k9SVOeQ0QEXhTh/0QCVPJLnxpyI9O1Z1go38piqQysoxy+DkJGEFUQHgbfMm3eHfdujwbYyH1rdp+xv4PAA==
+"@laffery/cos-db@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@laffery/cos-db/-/cos-db-1.1.1.tgz#07a3a37a237395017e76a32a363eeb231cb4d9fb"
+  integrity sha512-y1hPST6xWORZAeCfwmfhmV5URPmhrRq5z2ae52HiuzSrTtY7bUQvKWYTqrW+shzPPLmaYwhvZ2xEiuMnPFVlsQ==
   dependencies:
-    cos-nodejs-sdk-v5 "^2.11.5"
+    cos-nodejs-sdk-v5 "^2.11.6"
 
 "@prisma/client@^3.10.0":
   version "3.10.0"
@@ -345,10 +345,10 @@ aws4@^1.8.0:
   resolved "https://registry.npmjs.org/aws4/-/aws4-1.11.0.tgz"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
 
-axios@^0.26.0:
-  version "0.26.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.26.0.tgz#9a318f1c69ec108f8cd5f3c3d390366635e13928"
-  integrity sha512-lKoGLMYtHvFrPVt3r+RBMp9nh34N0M8zEfCWqdWZx6phynIEhQqAdydpyBAAG211zlhX9Rgu08cOamy6XjE5Og==
+axios@^0.26.1:
+  version "0.26.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.26.1.tgz#1ede41c51fcf51bbbd6fd43669caaa4f0495aaa9"
+  integrity sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==
   dependencies:
     follow-redirects "^1.14.8"
 
@@ -590,7 +590,7 @@ core-util-is@1.0.2:
   resolved "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
-cos-nodejs-sdk-v5@^2.11.5:
+cos-nodejs-sdk-v5@^2.11.6:
   version "2.11.6"
   resolved "https://registry.yarnpkg.com/cos-nodejs-sdk-v5/-/cos-nodejs-sdk-v5-2.11.6.tgz#54aa9cd9e2ccaefeade826a9e7eacf360b2e7a9a"
   integrity sha512-K5z9g6yQns1h5tVUUt0T+x9SYrB6QYXslIi5bh8FLVtV4U/Gdv3zpedYSU5IvG+ly23ko9u6usdaKvb+x7Bm7Q==
@@ -1395,7 +1395,7 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@^1.2.0:
+minimist@^1.2.0, minimist@^1.2.6:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
   integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
@@ -1874,14 +1874,14 @@ ts-node@^10.7.0:
     v8-compile-cache-lib "^3.0.0"
     yn "3.1.1"
 
-tsconfig-paths@^3.13.0:
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.13.0.tgz#f3e9b8f6876698581d94470c03c95b3a48c0e3d7"
-  integrity sha512-nWuffZppoaYK0vQ1SQmkSsQzJoHA4s6uzdb2waRpD806x9yfq153AdVsWz4je2qZcW+pENrMQXbGQ3sMCkXuhw==
+tsconfig-paths@^3.14.0:
+  version "3.14.1"
+  resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.14.1.tgz#ba0734599e8ea36c862798e920bcf163277b137a"
+  integrity sha512-fxDhWnFSLt3VuTwtvJt5fpwxBHg5AdKWMsgcPOOIilyjymcYVZoCQF8fvFRezCNfblEXmi+PcM1eYHeOAgXCOQ==
   dependencies:
     "@types/json5" "^0.0.29"
     json5 "^1.0.1"
-    minimist "^1.2.0"
+    minimist "^1.2.6"
     strip-bom "^3.0.0"
 
 tsscmp@1.0.6:

@@ -17,9 +17,10 @@ import userController from "controller/user";
 import blogController from "controller/blog";
 import dynamicController from "controller/dynamic";
 
+import COSClient from "@laffery/cos-db";
+
 const app = new Koa();
 const { port } = config;
-const COSClient = require("@laffery/cos-db");
 app.use(async (ctx, next) => {
   // set private secret key
   ctx.state.secret = fs.readFileSync(

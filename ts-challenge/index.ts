@@ -1,15 +1,12 @@
 import { Equal, Expect, NotAny } from "utils";
 
 /**
- * see https://github.com/type-challenges/type-challenges/blob/master/questions/13-warm-hello-world/README.md
- */
-
-/** Your code */
-type HelloWorld = string;
-
-/**
+ * Your code here
+ * @description Hello, World!
+ * @see https://tsch.js.org/13
  * @note You can write your note here
  */
+type HelloWorld = string;
 
 /** Test cases */
 type cases = [

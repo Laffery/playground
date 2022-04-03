@@ -1,19 +1,14 @@
 import { Equal, Expect, NotAny } from "utils";
 
 /**
- * Implement the built-in ReturnType<T> generic without using it.
- * see https://github.com/type-challenges/type-challenges/blob/master/questions/2-medium-return-type/README.md
- */
-
-/** Your code */
-type MyReturnType<T> = T extends (...args: any[]) => infer R ? R : never;
-
-/**
+ * Your code here
+ * @description Implement the built-in ReturnType<T> generic without using it.
+ * @see https://tsch.js.org/2
  * @note You can write your note here
  */
+type MyReturnType<T> = T extends (...args: any[]) => infer R ? R : never;
 
 /** Test cases */
-
 type cases = [
   Expect<Equal<string, MyReturnType<() => string>>>,
   Expect<Equal<123, MyReturnType<() => 123>>>,

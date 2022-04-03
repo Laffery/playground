@@ -1,11 +1,11 @@
 import { Equal, Expect } from "utils";
 
 /**
+ * Your code here
  * @description Implement the built-in Pick<T, K> generic without using it. Constructs a type by picking the set of properties K from T.
- * see https://github.com/type-challenges/type-challenges/blob/master/questions/4-easy-pick/README.md
+ * @see https://tsch.js.org/4
+ * @note You can write your note here
  */
-
-/** Your code */
 type MyPick<T, K extends keyof T> = {
   [P in K]: T[P];
 };

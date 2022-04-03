@@ -1,12 +1,12 @@
 import { Equal, Expect } from "utils";
 
 /**
- * @description Implement the built-in Readonly<T> generic without using it. 
+ * Your code here
+ * @description Implement the built-in Readonly<T> generic without using it.
  * Constructs a type with all properties of T set to readonly, meaning the properties of the constructed type cannot be reassigned.
- * see https://github.com/type-challenges/type-challenges/blob/master/questions/7-easy-readonly/README.md
+ * @see https://tsch.js.org/7
+ * @note You can write your note here
  */
-
-/** Your code */
 type MyReadonly<T> = {
   readonly [P in keyof T]: T[P];
 };

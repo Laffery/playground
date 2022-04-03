@@ -1,20 +1,16 @@
 import { Equal, Expect, NotAny } from "utils";
 
 /**
- * Implement the built-in Parameters generic without using it.
- * see https://github.com/type-challenges/type-challenges/blob/master/questions/3312-easy-parameters/README.md
+ * Your code here
+ * @description Implement the built-in Parameters generic without using it.
+ * @see https://tsch.js.org/3312
+ * @note You can write your note here
  */
-
-/** Your code */
 type MyParameters<T extends (...args: any[]) => any> = T extends (
   ...args: infer P
 ) => any
   ? P
   : never;
-
-/**
- * @note You can write your note here
- */
 
 /** Test cases */
 const foo = (_arg1: string, _arg2: number): void => {};

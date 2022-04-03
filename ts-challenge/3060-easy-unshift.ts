@@ -1,16 +1,12 @@
 import { Equal, Expect, NotAny } from "utils";
 
 /**
- * Implement the type version of Array.unshift
- * see https://github.com/type-challenges/type-challenges/blob/master/questions/3060-easy-unshift/README.md
- */
-
-/** Your code */
-type Unshift<T extends any[], U> = [U, ...T];
-
-/**
+ * Your code here
+ * @description Implement the type version of Array.unshift
+ * @see https://tsch.js.org/3060
  * @note You can write your note here
  */
+type Unshift<T extends any[], U> = [U, ...T];
 
 /** Test cases */
 type cases = [

@@ -1,22 +1,17 @@
 import { Equal, Expect, NotAny } from "utils";
 
 /**
- * If we have a type which is wrapped type like Promise. How we can get a type which is inside the wrapped type?
+ * Your code here
+ * @description If we have a type which is wrapped type like Promise. How we can get a type which is inside the wrapped type?
  * For example if we have Promise<ExampleType> how to get ExampleType?
- * see https://github.com/type-challenges/type-challenges/blob/master/questions/189-easy-awaited/README.md
+ * @see https://tsch.js.org/189
+ * @note recursively unwrap the type until it is not a Promise type
  */
-
-/** Your code */
 type MyAwaited<T extends Promise<any>> = T extends Promise<infer U>
   ? U extends Promise<any>
     ? Awaited<U>
     : U
   : T;
-
-/**
- * @note You can write your note here
- * recursively unwrap the type until it is not a Promise type
- */
 
 /** Test cases */
 type X = Promise<string>;

@@ -1,26 +1,19 @@
 import { Equal, Expect, NotAny } from "utils";
 
 /**
- * Implement the JavaScript Array.includes function in the type system. A type takes the two arguments.
+ * Your code here
+ * @description Implement the JavaScript Array.includes function in the type system. A type takes the two arguments.
  * The output should be a boolean true or false.
- * see https://github.com/type-challenges/type-challenges/blob/master/questions/898-easy-includes/README.md
+ * @see https://tsch.js.org/898
+ * @note if there is some element type in the array that is equal to P,
+ * then the result type if `true`(all elements are equal to P) or `boolean`(part of elements),
+ * anyway, the `true` extends to both of them.
  */
-
-/** Your code */
 type Includes<T extends readonly any[], P> = true extends {
   [K in keyof T]: Equal<T[K], P>;
 }[number]
   ? true
   : false;
-
-type a = Includes<[false], false>;
-
-/**
- * @note You can write your note here
- * if there is some element type in the array that is equal to P, 
- * then the result type if `true`(all elements are equal to P) or `boolean`(part of elements),
- * anyway, the `true` extends to both of them.
- */
 
 /** Test cases */
 type cases = [

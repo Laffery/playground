@@ -1,22 +1,18 @@
 import { Expect, Alike } from "utils";
 
 /**
- * Implement a generic MyReadonly2<T, K> which takes two type argument T and K.
+ * Your code here
+ * @description Implement a generic MyReadonly2<T, K> which takes two type argument T and K.
  * K specify the set of properties of T that should set to Readonly.
  * When K is not provided, it should make all properties readonly just like the normal Readonly<T>.
- * see https://github.com/type-challenges/type-challenges/blob/master/questions/8-medium-readonly-2/README.md
+ * @see https://tsch.js.org/8
+ * @note You can write your note here
  */
-
-/** Your code */
 type MyReadonly2<T, K extends keyof T = keyof T> = {
   readonly [P in K]: T[P];
 } & {
   [P in Exclude<keyof T, K>]: T[P];
 };
-
-/**
- * @note You can write your note here
- */
 
 /** Test cases */
 type cases = [

@@ -1,16 +1,12 @@
 import { Equal, Expect, NotAny } from "utils";
 
 /**
- * Implement the generic version of Array.push
- * see https://github.com/type-challenges/type-challenges/blob/master/questions/3057-easy-push/README.md
- */
-
-/** Your code */
-type Push<T extends any[], U> = [...T, U];
-
-/**
+ * Your code here
+ * @description Implement the generic version of Array.push
+ * @see https://tsch.js.org/3057
  * @note You can write your note here
  */
+type Push<T extends any[], U> = [...T, U];
 
 /** Test cases */
 type cases = [

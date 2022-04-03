@@ -1,19 +1,17 @@
 import { Equal, Expect, NotAny } from "utils";
 
 /**
- * Implement the built-in Omit<T, K> generic without using it.
+ * Your code here
+ * @description Implement the built-in Omit<T, K> generic without using it.
  * Constructs a type by picking all properties from T and then removing K
- * see https://github.com/type-challenges/type-challenges/blob/master/questions/3-medium-omit/README.md
+ * @see https://tsch.js.org/3
+ * @note You can write your note here
  */
 
-/** Your code */
+
 type MyOmit<T, K extends keyof T> = {
   [P in Exclude<keyof T, K>]: T[P];
 };
-
-/**
- * @note You can write your note here
- */
 
 /** Test cases */
 type cases = [

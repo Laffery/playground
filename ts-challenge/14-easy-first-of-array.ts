@@ -1,11 +1,13 @@
 import { Equal, Expect } from "utils";
 
 /**
+ * Your code here
  * @description Implement a generic First<T> that takes an Array T and returns it's first element's type.
- * see https://github.com/type-challenges/type-challenges/blob/master/questions/14-first-of-array/README.md
+ * @see https://tsch.js.org/14
+ * @note You can write your note here
  */
 
-/** Your code */
+
 /** @error type First<[]> is undefined */
 // type First<T extends any[]> = T[0];
 

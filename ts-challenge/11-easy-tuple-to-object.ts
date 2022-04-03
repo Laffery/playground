@@ -1,11 +1,11 @@
 import { Equal, Expect } from "utils";
 
 /**
+ * Your code here
  * @description Give an array, transform into an object type and the key/value must in the given array.
- * see https://github.com/type-challenges/type-challenges/blob/master/questions/11-easy-tuple-to-object/README.md
+ * @see https://tsch.js.org/11
+ * @note You can write your note here
  */
-
-/** Your code */
 type TupleToObject<T extends readonly (string | symbol | number)[]> = {
   [P in T[number]]: P;
 };

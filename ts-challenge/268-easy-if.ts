@@ -1,17 +1,13 @@
 import { Equal, Expect, NotAny } from "utils";
 
 /**
- * Implement a utils If which accepts condition C, a truthy return type T, and a falsy return type F.
+ * Your code here
+ * @description Implement a utils If which accepts condition C, a truthy return type T, and a falsy return type F.
  * C is expected to be either true or false while T and F can be any type.
- * see https://github.com/type-challenges/type-challenges/blob/master/questions/269-easy-if/README.md
- */
-
-/** Your code */
-type If<C extends boolean, T, F> = C extends true ? T : F;
-
-/**
+ * @see https://tsch.js.org/269
  * @note You can write your note here
  */
+type If<C extends boolean, T, F> = C extends true ? T : F;
 
 /** Test cases */
 type cases = [

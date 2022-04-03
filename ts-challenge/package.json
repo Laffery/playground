@@ -5,6 +5,7 @@
   "main": "index.ts",
   "types": "./index.d.ts",
   "scripts": {
+    "draft": "cp index.ts $*",
     "test": "echo \"Error: no test specified\""
   },
   "keywords": [
